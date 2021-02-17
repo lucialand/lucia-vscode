@@ -1,0 +1,7 @@
+{
+  "Lucia CDN": {
+    "prefix": "lucia-cdn",
+    "body": ["<script src=\"https://unpkg.com/lucia\"></script>"],
+    "description": "Add the following script to the end of your <head> section."
+  }
+}
