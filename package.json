@@ -18,24 +18,44 @@
         "./customData/html.json"
       ]
     },
+    "lucia": {
+      "customData": [
+        "./customData/html.json"
+      ]
+    },
+    "languages": [
+      {
+        "id": "lucia",
+        "aliases": [
+          "Lucia",
+          "lucia"
+        ],
+        "extensions": [
+          ".html"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
     "grammars": [
       {
-        "scopeName": "text.html",
+        "scopeName": "text.html.basic",
         "path": "./syntaxes/lucia.json",
         "injectTo": [
-          "text.html"
+          "text.html.basic"
         ],
+        "language": "lucia",
         "embeddedLanguages": {
-          "meta.embedded.block.html": "html",
-          "meta.embedded.block.css": "css",
-          "meta.template.expression.ts": "typescript",
-          "source.css": "css"
+          "meta.embedded.block.lucia": "lucia",
+          "meta.embedded.block.javascript": "source.js"
+        },
+        "tokenTypes": {
+          "meta.embedded.block.javascript": "other"
         }
       }
     ]
   },
   "activationEvents": [
-    "onLanguage:html"
+    "*"
   ],
   "repository": {
     "type": "git",
