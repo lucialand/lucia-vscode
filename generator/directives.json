@@ -1,0 +1,57 @@
+[
+  {
+    "name": "l-state",
+    "description": "`l-state` allows you to create component scopes with inline Javascript objects. This means you can pass state that can later be accessed in directives inside that scope. Components can be nested and declared inline with other directives as well.\r\n\r\n**Syntax:** `<div l-state=\"[object]\">...</div>`\r\n\r\n**Example:** `<div l-state=\"{ key: 'value' }\">...</div>`",
+    "url": "https://lucia.js.org/docs/directives/state-directive"
+  },
+  {
+    "name": "l-init",
+    "description": "`l-init` executes an expression once the component it is attached to is initialized. `l-init` is special because it requires an `l-state` directive to be inline with it. `l-init` cannot access state props, as only child elements with directives under the component scope can access them.\r\n\r\n**Syntax:** `<div l-state=\"{...}\" l-init=\"[expression]\">...</div>`\r\n\r\n**Example:** `<div l-state=\"{ key: 'value' }\" l-init=\"console.log('I am initialized')\">...</div>`",
+    "url": "https://lucia.js.org/docs/directives/init-directive"
+  },
+  {
+    "name": "l-text",
+    "description": "`l-text` allows you to set the `textContent` of an element. Any HTML will be stringified, check out [`l-html`](/docs/directives/html-directive) if you want to render dynamic content.\r\n\r\n**Syntax:** `<p l-text=\"[expression]\">...</p>`\r\n\r\n**Example:** `<p l-text=\"key\">...</p>`",
+    "url": "https://lucia.js.org/docs/directives/text-directive"
+  },
+  {
+    "name": "l-html",
+    "description": "`l-html` allows you to set the `innerHTML` of an element. This directive is somewhat dangerous because it can potentially result in unintended [XSS](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting).\r\n\r\n**Syntax:** `<p l-html=\"[expression]\">...</p>`\r\n\r\n**Example:** `<p l-html=\"key\">...</p>`",
+    "url": "https://lucia.js.org/docs/directives/html-directive"
+  },
+  {
+    "name": "l-on:",
+    "description": "> Note: The shorthand property for `l-bind` is `:`\r\n\r\n`l-bind` changes the value of an attribute based on the expression. If the value is a boolean, the attribute will be conditionally rendered.\r\n\r\n**Syntax:** `<button l-bind:[attribute]=\"[expression]\">...</button>`\r\n\r\n**Example:** `<button l-bind:title=\"key\">...</button>`",
+    "url": "https://lucia.js.org/docs/directives/on-directive"
+  },
+  {
+    "name": "@",
+    "description": "> Note: The shorthand property for `l-bind` is `:`\r\n\r\n`l-bind` changes the value of an attribute based on the expression. If the value is a boolean, the attribute will be conditionally rendered.\r\n\r\n**Syntax:** `<button l-bind:[attribute]=\"[expression]\">...</button>`\r\n\r\n**Example:** `<button l-bind:title=\"key\">...</button>`",
+    "url": "https://lucia.js.org/docs/directives/on-directive"
+  },
+  {
+    "name": "l-bind:",
+    "description": "> Note: The shorthand property for `l-bind` is `:`\r\n\r\n`l-bind` changes the value of an attribute based on the expression. If the value is a boolean, the attribute will be conditionally rendered.\r\n\r\n**Syntax:** `<button l-bind:[attribute]=\"[expression]\">...</button>`\r\n\r\n**Example:** `<button l-bind:title=\"key\">...</button>`",
+    "url": "https://lucia.js.org/docs/directives/bind-directive"
+  },
+  {
+    "name": ":",
+    "description": "> Note: The shorthand property for `l-bind` is `:`\r\n\r\n`l-bind` changes the value of an attribute based on the expression. If the value is a boolean, the attribute will be conditionally rendered.\r\n\r\n**Syntax:** `<button l-bind:[attribute]=\"[expression]\">...</button>`\r\n\r\n**Example:** `<button l-bind:title=\"key\">...</button>`",
+    "url": "https://lucia.js.org/docs/directives/bind-directive"
+  },
+  {
+    "name": "l-for",
+    "description": "`l-for` allows for iterative rendering, where elements are created based on the value of an array. The expression must adhere to a special syntax, which is detailed below. There can only be one child element in the scope. When referencing the `item` or `index` it must be prepended with `this.`. The children under the `l-for` element cannot be components.\r\n\r\n**Syntax:** `(item, index) in array`\r\n\r\n**Example:**\r\n```html\r\n<div l-for=\"(item, index) in items\">\r\n  <p l-text=\"this.item\"></p>\r\n</div>\r\n```",
+    "url": "https://lucia.js.org/docs/directives/for-directive"
+  },
+  {
+    "name": "l-model",
+    "description": "`l-model` allows the value of the input element will be kept in sync with the value of the state property of the component, allowing two-way binding. When the input is changed, `l-model` automatically detects the values of text inputs, checkboxes, radio buttons, textareas, selects, and multiple selects.\r\n\r\n> Note: `l-model` will automatically attempt to coerce the type of the value to the same type of the state property value.\r\n\r\n**Syntax:** `<input type=\"text\" l-model=\"[prop]\">`\r\n\r\n**Example:** `<input type=\"text\" l-model=\"key\">`\r\n",
+    "url": "https://lucia.js.org/docs/directives/model-directive"
+  },
+  {
+    "name": "l-mask",
+    "description": "`l-mask` is removed when an element is rendered. If you want elements to have a certain style on load, this is really useful for you. A typical use case is to use it to hide anything you don't want to show until Lucia renders it.\r\n\r\n```css\r\n[l-mask] {\r\n  display: none;\r\n}\r\n```\r\n\r\n**Syntax:** `<div l-mask></div>`\r\n",
+    "url": "https://lucia.js.org/docs/directives/mask-directive"
+  }
+]
