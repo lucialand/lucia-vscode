@@ -2,7 +2,7 @@
   "name": "lucia",
   "displayName": "Lucia Intellisense",
   "description": "Lucia syntax highlighting and intellisense for VSCode",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "icon": "assets/logo.png",
   "publisher": "aidenybai",
   "engines": {
