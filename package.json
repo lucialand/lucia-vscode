@@ -3,6 +3,7 @@
   "displayName": "lucia",
   "description": "Lucia syntax highlighting and intellisense for VSCode",
   "version": "0.0.1",
+  "publisher": "aidenybai",
   "engines": {
     "vscode": "^1.53.0"
   },
