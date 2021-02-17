@@ -1,8 +1,8 @@
 {
   "name": "lucia",
-  "displayName": "lucia",
+  "displayName": "Lucia Intellisense",
   "description": "Lucia syntax highlighting and intellisense for VSCode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "assets/logo.png",
   "publisher": "aidenybai",
   "engines": {
@@ -18,39 +18,13 @@
         "./customData/html.json"
       ]
     },
-    "lucia": {
-      "customData": [
-        "./customData/html.json"
-      ]
-    },
-    "languages": [
-      {
-        "id": "lucia",
-        "aliases": [
-          "Lucia",
-          "lucia"
-        ],
-        "extensions": [
-          ".html"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
     "grammars": [
       {
         "scopeName": "text.html.basic",
         "path": "./syntaxes/lucia.json",
         "injectTo": [
           "text.html.basic"
-        ],
-        "language": "lucia",
-        "embeddedLanguages": {
-          "meta.embedded.block.lucia": "lucia",
-          "meta.embedded.block.javascript": "source.js"
-        },
-        "tokenTypes": {
-          "meta.embedded.block.javascript": "other"
-        }
+        ]
       }
     ]
   },
