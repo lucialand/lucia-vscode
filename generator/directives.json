@@ -11,7 +11,7 @@
   },
   {
     "name": "l-text",
-    "description": "`l-text` allows you to set the `textContent` of an element. Any HTML will be stringified, check out [`l-html`](/docs/directives/html-directive) if you want to render dynamic content.\n\n**Syntax:** `<p l-text=\"[expression]\">...</p>`\n\n**Example:** `<p l-text=\"key\">...</p>`",
+    "description": "`l-text` allows you to set the `textContent` of an element. Any HTML will be stringified, check out `l-html` if you want to render dynamic content.\n\n**Syntax:** `<p l-text=\"[expression]\">...</p>`\n\n**Example:** `<p l-text=\"key\">...</p>`",
     "url": "https://lucia.js.org/docs/directives/text-directive"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "name": "l-model",
-    "description": "`l-model` allows the value of the input element will be kept in sync with the value of the state property of the component, allowing two-way binding. When the input is changed, `l-model` automatically detects the values of text inputs, checkboxes, radio buttons, textareas, selects, and multiple selects.\n\n> Note: `l-model` will automatically attempt to coerce the type of the value to the same type of the state property value.\n\n**Syntax:** `<input type=\"text\" l-model=\"[prop]\">`\n\n**Example:** `<input type=\"text\" l-model=\"key\">`\r\n",
+    "description": "`l-model` allows the value of the input element will be kept in sync with the value of the state property of the component, allowing two-way binding. When the input is changed, `l-model` automatically detects the values of text inputs, checkboxes, radio buttons, textareas, selects, and multiple selects.\n\n**Syntax:** `<input type=\"text\" l-model=\"[prop]\">`\n\n**Example:** `<input type=\"text\" l-model=\"key\">`\r\n",
     "url": "https://lucia.js.org/docs/directives/model-directive"
   },
   {

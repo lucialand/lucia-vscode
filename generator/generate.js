@@ -32,7 +32,7 @@ for (const { name, description, url } of directives) {
         name: `${name}${properties[properties.length - 1].name}`,
         description: {
           kind: 'markdown',
-          value: `${description}\n\n${properties[properties.length - 1].description}`,
+          value: `${description}\n\n**Property:**\n${properties[properties.length - 1].description}`,
         },
         references: [
           {
@@ -49,7 +49,7 @@ for (const { name, description, url } of directives) {
           name: `${name}${attribute.name}`,
           description: {
             kind: 'markdown',
-            value: `${description}\n\n${attribute.description}`,
+            value: `${description}\n\n**Attribute:**\n${attribute.description}`,
           },
           references: [
             {
@@ -75,7 +75,7 @@ for (const { name, description, url } of directives) {
             name: `${name}${event.name}${prop.name}`,
             description: {
               kind: 'markdown',
-              value: `${description}\n\n${event.description}\n\n${prop.description}`,
+              value: `${description}\n\n**Event:**\n${event.description}\n\n**Property:**\n${prop.description}`,
             },
             references: [
               {
