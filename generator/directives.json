@@ -20,6 +20,16 @@
     "url": "https://lucia.js.org/docs/directives/html-directive"
   },
   {
+    "name": "l-show",
+    "description": "`l-show` allows you to toggles `display: none;` on an element based on whether the expression returns `true` or `false`.",
+    "url": "https://lucia.js.org/docs/directives/show-directive"
+  },
+  {
+    "name": "l-ref",
+    "description": "`l-ref` allows you to specify a property that can later be accessed using the `$refs` special property.",
+    "url": "https://lucia.js.org/docs/directives/ref-directive"
+  },
+  {
     "name": "l-on:",
     "description": "`l-on` adds an event listener to the element is is attached to. This means if that event is emited on the element, then it will execute the expression. Check the Events refererence on MDN for more information.\n\n**Syntax:** `<button l-on:[event]=\"[expression]\">...</button>`\n\n**Example:** `<button l-on:click=\"key = 'value'\">Change value</button>`",
     "url": "https://lucia.js.org/docs/directives/on-directive"

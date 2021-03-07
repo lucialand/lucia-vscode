@@ -6,8 +6,8 @@
   },
   {
     "target": "l-on:",
-    "name": ".prevent",
-    "description": "The `.prevent` property calls the `preventDefault()` on the event when it is called, essentially preventing normal, predefined behavior."
+    "name": ".self",
+    "description": "The `.self` property attaches an event handler to the element, conditionally excluding the children of that element. This means that it only executes the expression when only target element is fired. This could be used for cards with additional interactives."
   },
   {
     "target": "l-on:",
