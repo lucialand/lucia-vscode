@@ -64,6 +64,10 @@
       "description": "The duration attribute has been updated."
   },
   {
+    "name": "effect",
+    "description": "When the element is updated by Lucia."
+  },
+  {
       "name": "emptied",
       "description": "The media has become empty; for example, this event is sent if the media has already been loaded (or partially loaded), and the load() method is called to reload it."
   },
@@ -114,6 +118,10 @@
   {
       "name": "loadstart",
       "description": "Progress has begun."
+  },
+  {
+    "name": "mounted",
+    "description": "When a component is mounted onto an element, must be inline with `l-state`"
   },
   {
       "name": "mousedown",
