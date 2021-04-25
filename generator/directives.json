@@ -5,11 +5,6 @@
     "url": "https://lucia.js.org/docs/directives/state-directive"
   },
   {
-    "name": "l-init",
-    "description": "`l-init` executes an expression once the component it is attached to is initialized. `l-init` is special because it requires an `l-state` directive to be inline with it. `l-init` cannot access state props, as only child elements with directives under the component scope can access them.\n\n**Syntax:** `<div l-state=\"{...}\" l-init=\"[expression]\">...</div>`\n\n**Example:** `<div l-state=\"{ key: 'value' }\" l-init=\"console.log('I am initialized')\">...</div>`",
-    "url": "https://lucia.js.org/docs/directives/init-directive"
-  },
-  {
     "name": "l-text",
     "description": "`l-text` allows you to set the `textContent` of an element. Any HTML will be stringified, check out `l-html` if you want to render dynamic content.\n\n**Syntax:** `<p l-text=\"[expression]\">...</p>`\n\n**Example:** `<p l-text=\"key\">...</p>`",
     "url": "https://lucia.js.org/docs/directives/text-directive"
